@@ -27,16 +27,16 @@ public class Reservation {
     @Column(name = "u_id", nullable = false, length = 255)
     private Long uId;      // 유저 ID
 
-    @Column(name = "r_spot", nullable = false, length = 255)
+    @Column(name = "r_spot", length = 255)
     private String rSpot;    // 좌석 번호
 
-    @Column(name = "r_spot_status", nullable = false, length = 255)
+    @Column(name = "r_spot_status", length = 255)
     private String rSpotStatus; // 좌석 상태
 
-    @Column(name = "r_phone", nullable = false, length = 255)
+    @Column(name = "r_phone", length = 255)
     private String rPhone;   // 예매자의 전화번호
 
-    @Column(name = "r_email", nullable = false, length = 255)
+    @Column(name = "r_email", length = 255)
     private String rEmail;   // 예매자의 이메일
 
     @CreationTimestamp
