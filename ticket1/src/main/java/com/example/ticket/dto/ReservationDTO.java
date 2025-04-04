@@ -14,7 +14,7 @@ public class ReservationDTO {
 
     private Long rId;        // 예매 ID
     private String uName;    // 유저 이름
-    private String uId;      // 유저 ID
+    private Long uId;      // 유저 ID
     private String rSpot;    // 좌석 번호
     private String rSpotStatus; // 좌석 상태
     private String rPhone;   // 예매자의 전화번호
@@ -28,6 +28,6 @@ public class ReservationDTO {
     private int pAllSpot;    // 전체 좌석
 
     @NonNull
-    private String pId;      // 공연 ID
+    private Long pId;      // 공연 ID
 
 }

@@ -16,5 +16,6 @@ public class Ticket {
     private LocalDateTime pDate; // 공연 날짜+시간
     private String pTitle;     // 공연 제목
     private String pPlace;     // 공연 장소
+    private Long uId;
 }
 

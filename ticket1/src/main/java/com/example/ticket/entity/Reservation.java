@@ -25,7 +25,7 @@ public class Reservation {
     private String uName;    // 유저 이름
 
     @Column(name = "u_id", nullable = false, length = 255)
-    private String uId;      // 유저 ID
+    private Long uId;      // 유저 ID
 
     @Column(name = "r_spot", nullable = false, length = 255)
     private String rSpot;    // 좌석 번호
@@ -59,5 +59,5 @@ public class Reservation {
     private int pAllSpot;    // 전체 좌석
 
     @Column(name = "p_id", nullable = false, length = 255)
-    private String pId;      // 공연 ID
+    private Long pId;      // 공연 ID
 }

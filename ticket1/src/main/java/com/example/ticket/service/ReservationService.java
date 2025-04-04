@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -21,6 +22,10 @@ import java.util.Optional;
 public class ReservationService {
 
     private final ReservationRepository reservationRepository;
+
+
+
+
 
  /**
  *    좌석 하나 마다 생성 됨
@@ -45,6 +50,10 @@ public class ReservationService {
                 .pAllSpot(res.getPAllSpot())
                 .build()).orElse(null);
     }
+
+//    public ReservationDTO updateReservation(String rPhone, String rEmail) {
+//
+//    }
 
     // 엔티티에 저장
     public ReservationDTO createReservation(ReservationDTO reservationDTO) {
@@ -94,6 +103,7 @@ public class ReservationService {
                 .pTitle(res.getPTitle())
                 .pPlace(res.getPPlace())
                 .pDate(res.getPDate())
+                .uId(res.getUId())
                 .build()).orElse(null);
     }
 
